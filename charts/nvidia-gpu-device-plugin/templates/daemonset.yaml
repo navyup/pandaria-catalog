@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   {{- if .Values.shared }}
-  name: shared-nvidia-device-plugin-daemonset
+  name: shared-nvidia-device-plugin-ds
   {{- else }}
-  name: nvidia-device-plugin-daemonset
+  name: nvidia-device-plugin-ds
   {{- end }}
 #   namespace: kube-system
 spec:
